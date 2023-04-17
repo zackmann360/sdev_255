@@ -1,4 +1,5 @@
 const http = require('http');
+const fs = require('fs')
 
 const server = http.createServer((req, res) => {
   // console.log(req);
@@ -16,12 +17,12 @@ const server = http.createServer((req, res) => {
   //   if (err) {
   //     console.log(err);
   //     res.end();
-  //   }
-  //   //res.write(data);
+  //   } else
+  //   // res.write(data);
   //   res.end(data);
   // });
 
-  // routing
+  //routing
   let path = './views/';
   switch(req.url) {
     case '/':
